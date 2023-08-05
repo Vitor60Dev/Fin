@@ -1,15 +1,15 @@
 const typingText = document.getElementById("typing-text");
 const footerText = document.getElementById("footer-text");
 const compliments = [
-  "😊 Você é simplesmente deslumbrante! 😊",
-  "🌼 Sua beleza ilumina qualquer ambiente! 🌼",
+  "😊 Você é simplesmente Perfeita! 😊",
+  "🌼 Sua beleza ilumina qualquer lugar! 🌼",
   "🌟 Seus olhos são como estrelas brilhantes! 🌟",
   "🌺 Seu sorriso é contagiante e encantador! 🌺",
-  "💖 Você é maravilhosa, por dentro e por fora! 💖",
-  "🦋 Sua beleza é tão única quanto uma borboleta! 🦋",
+  "💖 Você é maravilhosa, por dentro e por fora hehe! 💖",
+  "🦋 Sua beleza é tão única quanto uma Aurora! 🦋",
   "🌹 Você é uma rosa em um jardim de emoções! 🌹",
-  "🌈 Sua presença traz mais cores para o mundo! 🌈",
-  "🌸 Seu encanto é comparável à beleza das flores! 🌸",
+  "🌈 Sua presença traz mais cores que um Arcoires! 🌈",
+  "🌸 Seu encanto é comparável à beleza da Ana de Armas! 🌸",
   "🌞 Seu brilho é como o sol em um dia claro! 🌞",
 ];
 
