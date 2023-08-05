@@ -6,14 +6,17 @@ p,
 button {
   margin: 0;
   padding: 0;
+  background: #000000;
 }
 
 /* Estilos da top bar */
 .top-bar {
-  background-color: #333;
-  color: #fff;
+  background: #000000;
+  color: #b700ff;
   text-align: center;
-  padding: 10px;
+  padding: 40px;
+  height: 40px;
+  border: #b700ff solid 1px;
 }
 
 /* Estilos do conteúdo principal */
@@ -26,12 +29,12 @@ button {
 
 h2 {
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 
 .compliment {
   margin-bottom: 15px;
-  color: #666;
+  color: #f700ff;
   font-size: 18px;
 }
 
