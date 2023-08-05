@@ -1,0 +1,72 @@
+/* Reset de estilos básicos */
+body,
+h1,
+h2,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos da top bar */
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos do conteúdo principal */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.compliment {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .compliment {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
