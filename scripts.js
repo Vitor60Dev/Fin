@@ -1,32 +1,33 @@
 const typingText = document.getElementById("typing-text");
+const footerText = document.getElementById("footer-text");
 const compliments = [
-  "😊 Você é simplesmente Perfeita! 😊",
+  "😊 Você é simplesmente deslumbrante! 😊",
   "🌼 Sua beleza ilumina qualquer ambiente! 🌼",
   "🌟 Seus olhos são como estrelas brilhantes! 🌟",
   "🌺 Seu sorriso é contagiante e encantador! 🌺",
   "💖 Você é maravilhosa, por dentro e por fora! 💖",
-  "🦋 Sua beleza é tão única quanto uma Aurora! 🦋",
+  "🦋 Sua beleza é tão única quanto uma borboleta! 🦋",
   "🌹 Você é uma rosa em um jardim de emoções! 🌹",
-  "🌈 Sua presença traz mais cores que um arcoires! 🌈",
-  "🌸 Seu encanto é comparável à beleza da Ana de Armas! 🌸",
+  "🌈 Sua presença traz mais cores para o mundo! 🌈",
+  "🌸 Seu encanto é comparável à beleza das flores! 🌸",
   "🌞 Seu brilho é como o sol em um dia claro! 🌞",
 ];
 
-function typeText(text, index = 0) {
+function typeText(text, element, index = 0) {
   if (index < text.length) {
-    typingText.textContent = text.slice(0, index + 1);
-    setTimeout(() => typeText(text, index + 1), 100);
+    element.textContent = text.slice(0, index + 1);
+    setTimeout(() => typeText(text, element, index + 1), 100);
   } else {
-    setTimeout(() => deleteText(text), 1000);
+    setTimeout(() => deleteText(text, element), 1000);
   }
 }
 
-function deleteText(text, index = text.length) {
+function deleteText(text, element, index = text.length) {
   if (index > 0) {
-    typingText.textContent = text.slice(0, index - 1);
-    setTimeout(() => deleteText(text, index - 1), 50);
+    element.textContent = text.slice(0, index - 1);
+    setTimeout(() => deleteText(text, element, index - 1), 50);
   } else {
-    setTimeout(() => typeText(text), 500);
+    setTimeout(() => typeText(text, element), 500);
   }
 }
 
@@ -35,7 +36,8 @@ function showCompliment(number) {
   complimentElement.textContent = compliments[number - 1];
 }
 
-// Iniciar a animação da top bar
+// Iniciar as animações da top bar e do rodapé
 window.onload = () => {
-  typeText("Financeiro Perfeito");
+  typeText("Financeiro Perfeito", typingText);
+  typeText("Feito com carinho pelo Vitinho", footerText);
 };
